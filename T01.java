@@ -4,13 +4,13 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T01 {
+public class JavaApplication {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
         String iSBN, judul, penulis, penerbit, formatbukuelektronik;
-        int tahunTerbit;
-        double hargaPembelian, minimummargin, stok;
+        int tahunTerbit, stok;
+        double hargaPembelian, minimummargin;
         double rating;
 
         iSBN = input.nextLine();
@@ -21,8 +21,9 @@ public class T01 {
         formatbukuelektronik = input.nextLine();
         hargaPembelian = Double.parseDouble(input.nextLine());
         minimummargin = Double.parseDouble(input.nextLine());
-        stok = Double.parseDouble(input.nextLine());
+        stok = Integer.parseInt(input.nextLine());
         rating = Double.parseDouble(input.nextLine());
         System.out.println(iSBN + "|" + judul + "|" + penulis + "|" + tahunTerbit + "|" + penerbit + "|" + formatbukuelektronik + "|" + hargaPembelian + "|" + minimummargin + "|" + stok + "|" + rating);
     }
 }
+

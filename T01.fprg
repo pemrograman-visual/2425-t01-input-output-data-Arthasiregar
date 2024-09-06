@@ -1,38 +1,31 @@
 <?xml version="1.0"?>
 <flowgorithm fileversion="4.2">
     <attributes>
-        <attribute name="name" value="Pair rahel 1"/>
+        <attribute name="name" value="T01"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-09-06 11:21:25 AM"/>
-        <attribute name="created" value="QVNVUztMQVBUT1AtUTZMTDI0MEs7MjAyNC0wOS0wNjsxMDoxMDoyOCBBTTsyNjAx"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtUTZMTDI0MEs7MjAyNC0wOS0wNjsxMToyMToyNSBBTTsyOzI3MTA="/>
+        <attribute name="saved" value="2024-09-06 11:42:36 AM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtUTZMTDI0MEs7MjAyNC0wOS0wNjsxMDo1MDo0MyBBTTsyNjAy"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtUTZMTDI0MEs7MjAyNC0wOS0wNjsxMTo0MjozNiBBTTsxOzI3MTQ="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="ISBN, Judul, Penulis, Tahunterbit, Penerbit, Formatbukuelektronik" type="String" array="False" size=""/>
+            <declare name="ISBN, Judul, Penulis, Penerbit, Formatbukuelektronik" type="String" array="False" size=""/>
+            <declare name="TahunTerbit, Stok" type="Integer" array="False" size=""/>
+            <declare name="HargaPembelian, Minimummargin" type="Real" array="False" size=""/>
+            <declare name="Rating" type="Real" array="False" size=""/>
             <input variable="ISBN"/>
-            <output expression="&quot;978-0201498400&quot;" newline="True"/>
             <input variable="Judul"/>
-            <output expression="&quot;Data Structures and Algorithm Analysis in C&quot;" newline="True"/>
             <input variable="Penulis"/>
-            <output expression="&quot;Mark Allen Weiss&quot;" newline="True"/>
-            <input variable="Tahunterbit"/>
-            <output expression="&quot;1996&quot;" newline="True"/>
+            <input variable="TahunTerbit"/>
             <input variable="Penerbit"/>
-            <output expression="&quot;Pearson&quot;" newline="True"/>
             <input variable="Formatbukuelektronik"/>
-            <output expression="&quot;yes&quot;" newline="True"/>
-            <declare name="Hargapembelian, Minimummargin, Stok, Rating" type="Real" array="False" size=""/>
-            <input variable="Hargapembelian"/>
-            <output expression="&quot;84.21&quot;" newline="True"/>
+            <input variable="HargaPembelian"/>
             <input variable="Minimummargin"/>
-            <output expression="&quot;20.12&quot;" newline="True"/>
             <input variable="Stok"/>
-            <output expression="&quot;0&quot;" newline="True"/>
             <input variable="Rating"/>
-            <output expression="&quot;4.6&quot;" newline="True"/>
+            <output expression="ISBN &amp;&quot;|&quot; &amp; Judul &amp;&quot;|&quot; &amp; Penulis &amp;&quot;|&quot; &amp; Tahunterbit &amp;&quot;|&quot; &amp; Penerbit &amp;&quot;|&quot; &amp; Formatbukuelektronik &amp;&quot;|&quot; &amp; Hargapembelian &amp;&quot;|&quot; &amp; Minimummargin &amp;&quot;|&quot; &amp; Stok &amp;&quot;|&quot; &amp; Rating" newline="True"/>
         </body>
     </function>
 </flowgorithm>
